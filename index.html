@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Home Page</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/movie-detail.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- navbar -->
+        <div class="navbar">
+            <a href="/index.html">
+                <h1 class="logo">MovieVerse</h1>
+            </a>
+            <div class="input_group">
+                <select id="filter-movies">
+                    <option value="">All</option>
+                    <option value="movie">Movies</option>
+                    <option value="series">TV Shows</option>
+                    <option value="episode">Episode</option>
+                </select>
+                <div class="search_wrapper">
+                    <input type="text" id="search-box" placeholder="Search for movies, series or episode...">
+
+                    <ul class="suggestion_box"></ul>
+
+                </div>
+                <span class="search_button" id="search-button"><i class="fa-brands fa-sistrix"></i></span>
+            </div>
+
+        </div>
+
+        <!-- loader -->
+        <div class="loader_container">
+            <div class="loader"></div>
+        </div>
+        <!-- cards container -->
+        <div class="card_panel">
+
+        </div>
+
+        <!-- pagination -->
+        <div class="pagination_container">
+            <button class="pagination_button prev">Prev</button>
+            <p>Page <span id="page-count">0</span> of <span id="total-page-count">0</span></p>
+            <button class="pagination_button next">Next</button>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="./js/home.js"></script>
+    <!-- <script type="module" src="./js/movie-detail.js"></script> -->
+</body>
+
+</html>

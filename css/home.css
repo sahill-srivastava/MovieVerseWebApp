@@ -1,0 +1,95 @@
+.card_panel {
+    padding: 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.card_panel a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card_box {
+    /* background-image: url(./assets/no-poster-avail.png); */
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    min-height: 300px;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    box-shadow:
+        0 4px 12px rgba(226, 9, 20, 0.25),
+        0 0 20px rgba(226, 9, 20, 0.15);
+    transition: 0.3s ease;
+}
+
+.card_box:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+.card_content_box {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 10px 10px 10px;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.card_content_box h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card_content_box p {
+    font-size: 14px;
+}
+
+@media (max-width: 400px) {
+
+    .card_panel {
+        padding: 20px 20px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card_box {
+        min-height: 400px;
+    }
+}
+
+.pagination_container {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pagination_button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+
+    .pagination_container {
+        /* flex-direction: column; */
+        padding: 20px 10px;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+
+}
