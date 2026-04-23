@@ -35,7 +35,6 @@ a {
 }
 
 .container {
-    width: 1200px;
     max-width: 1300px;
     border-radius: 20px;
     background:
@@ -47,6 +46,7 @@ a {
 
 @media (max-width: 400px) {
     .container {
+        width: 100vw;
         border-radius: 0;
         padding: 10px 5px 40px 5px;
     }
