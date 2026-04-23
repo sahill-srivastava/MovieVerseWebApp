@@ -41,6 +41,10 @@
     margin-bottom: 15px;
 }
 
+.movie_info_container h1 span#movie-title{
+    margin-right: 8px;
+}
+
 .movie_info_container p strong {
     font-weight: 600;
 }
