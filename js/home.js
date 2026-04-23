@@ -2,7 +2,9 @@ import { showloader, resetloader, state, fetchMovie, debounce, fetchMovieDetails
 
 //DOM refs
 const movieFilterEl = document.getElementById("filter-movies");
+
 const searchBoxEl = document.getElementById("search-box");
+
 const searchBtnEl = document.getElementById("search-button")
 
 const suggestionBox = document.querySelector(".suggestion_box");
@@ -164,7 +166,7 @@ function updateUI(result) {
         cardPanel.style.display = "grid";
         renderUI(result);
 
-    }, 1000);
+    }, 300);
 }
 
 
@@ -206,7 +208,6 @@ const debouncedFetchMovie = debounce(handleSearch, 400)
 function handleInput(e) {
 
     isTyping = true;
-    console.log(e.target.value)
     setState({
         query: e.target.value.trim(),
         page: 1
@@ -280,7 +281,6 @@ movieFilterEl.addEventListener("input", (e) => {
 
     debouncedFetchMovie()
 })
-
 
 prevBtnEl.addEventListener("click", () => {
 

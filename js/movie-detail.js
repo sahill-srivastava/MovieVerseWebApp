@@ -104,7 +104,7 @@ function renderUI(result) {
     setTimeout(() => {
         resetloader();
         createMoviePanel(result);
-    }, 600)
+    }, 300)
 
 }
 
