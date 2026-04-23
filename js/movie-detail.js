@@ -54,7 +54,7 @@ function createMoviePanel(result) {
     moviePanel.innerHTML = `
      <div class="poster_container"></div>
                 <div class="movie_info_container">
-                    <h1> <span id="movie-title">${result.movieName}</span><span id="movie-year">(${result.year})</span>
+                    <h1> <span id="movie-title">${result.movieName}</span> <span id="movie-year">(${result.year})</span>
                     </h1>
 
                     <p><strong>IMDB Rating</strong>: <span id="imdb-rating">${result.rating}</span> ⭐⭐⭐⭐</p>
